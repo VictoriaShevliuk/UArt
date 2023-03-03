@@ -1,7 +1,12 @@
 package ViktoriaProjects.UArtApplication.controller;
 
 
+import ViktoriaProjects.UArtApplication.model.User;
+import ViktoriaProjects.UArtApplication.service.RoleService;
+import ViktoriaProjects.UArtApplication.service.UserService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
