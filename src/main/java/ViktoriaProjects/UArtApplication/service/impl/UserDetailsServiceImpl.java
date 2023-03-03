@@ -2,6 +2,7 @@ package ViktoriaProjects.UArtApplication.service.impl;
 
 
 import ViktoriaProjects.UArtApplication.model.User;
+import ViktoriaProjects.UArtApplication.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.security.core.userdetails.UserDetails;
