@@ -19,7 +19,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
     @Pattern(regexp = "[A-Z][a-z]+",
             message = "Must start with a capital letter followed by one or more lowercase letters")
     @Column(name = "first_name", nullable = false)
@@ -42,7 +42,7 @@ public class User {
     public User(){
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
