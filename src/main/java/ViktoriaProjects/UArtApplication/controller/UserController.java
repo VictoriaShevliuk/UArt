@@ -10,7 +10,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 @RequestMapping("/users")
 public class UserController {
 
@@ -36,7 +36,7 @@ public class UserController {
         user.setPassword(user.getPassword());
         user.setRole(roleService.readById(2));
         User newUser = userService.create(user);
-        return "redirect:/todos/all/users/" + newUser.getId();
+        return "redirect:/exhibitions/all/users/" + newUser.getId();
     }
 
     @GetMapping("/{id}/read")
