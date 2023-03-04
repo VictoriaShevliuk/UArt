@@ -1,5 +1,6 @@
 package ViktoriaProjects.UArtApplication.service.impl;
 
+import ViktoriaProjects.UArtApplication.exeption.NullEntityReferenceException;
 import ViktoriaProjects.UArtApplication.model.User;
 import ViktoriaProjects.UArtApplication.repository.UserRepository;
 import ViktoriaProjects.UArtApplication.service.UserService;
@@ -14,6 +15,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.access.prepost.PreFilter;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
